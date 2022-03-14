@@ -3,4 +3,4 @@ project(laba_5c C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(laba_5c main.c)
+add_executable(laba_5c main.c algo/algo.c algo/algo.h)

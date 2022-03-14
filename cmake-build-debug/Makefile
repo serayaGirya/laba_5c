@@ -128,6 +128,30 @@ laba_5c/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba_5c.dir\build.make CMakeFiles/laba_5c.dir/build
 .PHONY : laba_5c/fast
 
+algo/algo.obj: algo/algo.c.obj
+.PHONY : algo/algo.obj
+
+# target to build an object file
+algo/algo.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba_5c.dir\build.make CMakeFiles/laba_5c.dir/algo/algo.c.obj
+.PHONY : algo/algo.c.obj
+
+algo/algo.i: algo/algo.c.i
+.PHONY : algo/algo.i
+
+# target to preprocess a source file
+algo/algo.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba_5c.dir\build.make CMakeFiles/laba_5c.dir/algo/algo.c.i
+.PHONY : algo/algo.c.i
+
+algo/algo.s: algo/algo.c.s
+.PHONY : algo/algo.s
+
+# target to generate assembly for a file
+algo/algo.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\laba_5c.dir\build.make CMakeFiles/laba_5c.dir/algo/algo.c.s
+.PHONY : algo/algo.c.s
+
 main.obj: main.c.obj
 .PHONY : main.obj
 
@@ -161,6 +185,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... laba_5c
+	@echo ... algo/algo.obj
+	@echo ... algo/algo.i
+	@echo ... algo/algo.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/serge/CLionProjects/laba_5c/algo/algo.h
+stdio.h
+-
+stdbool.h
+-
+
+C:/Users/serge/CLionProjects/laba_5c/main.c
+stdio.h
+-
+stdlib.h
+-
+time.h
+-
+memory.h
+-
+algo/algo.h
+C:/Users/serge/CLionProjects/laba_5c/algo/algo.h
+

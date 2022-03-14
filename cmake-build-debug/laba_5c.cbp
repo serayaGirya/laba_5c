@@ -74,6 +74,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/serge/CLionProjects/laba_5c/algo/algo.c">
+			<Option target="laba_5c"/>
+		</Unit>
+		<Unit filename="C:/Users/serge/CLionProjects/laba_5c/algo/algo.h">
+			<Option target="laba_5c"/>
+		</Unit>
 		<Unit filename="C:/Users/serge/CLionProjects/laba_5c/main.c">
 			<Option target="laba_5c"/>
 		</Unit>
