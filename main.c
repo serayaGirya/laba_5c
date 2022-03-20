@@ -470,7 +470,7 @@ void checkNComp(long long (*nComp )(int *a, size_t n),
     static size_t runCounter = 1;
 
     // генерация последовательности
-    static int innerBuffer[100000];
+    static int innerBuffer[1000000];
     generateFunc(innerBuffer, size);
     printf("Run #%zu| ", runCounter++);
     printf("Name: %s\n", experimentName);
@@ -509,12 +509,12 @@ void timeExperiment() {
 //            {selectionSort, "selectionSort"},
 //            {insertionSort, "insertionSort"},
 //            {bubbleSort,    "bubbleSort"},
-//            {combsort,      "combSort"},
-            {ShellSort, "shellSort"},
-//            {radixSort,     "radixSort"},
-//            {mergeSort,     "mergeSort"},
-////            {heapSort,      "heapSort"},
-////            {quicksort,      "quicksort"},
+            {combsort,      "combSort"},
+//            {ShellSort,     "shellSort"},
+            {radixSort,     "radixSort"},
+            {mergeSort,     "mergeSort"},
+            {heapSort,      "heapSort"},
+            {quicksort,     "quicksort"},
             // вы добавите свои сортировки
     };
     const unsigned FUNCS_N = ARRAY_SIZE (sorts);
@@ -527,7 +527,7 @@ void timeExperiment() {
 //            {shellSortN,     "shellSortN"},
 //            {mergeSortN,     "mergeSortN"},
 //            {heapSortN,      "heapSortN"},
-//            {quicksortN,      "quicksortN"},
+//            {quicksortN,     "quicksortN"},
     };
 
     const unsigned COMPS_N = ARRAY_SIZE(nComps);
@@ -544,7 +544,7 @@ void timeExperiment() {
     const unsigned CASES_N = ARRAY_SIZE (generatingFuncs);
 
     // запись статистики в файл
-    for (size_t size = 200000; size <= 200000; size += 10000) {
+    for (size_t size = 100000; size <= 500000; size += 60000) {
         printf(" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -\n");
         printf(" Size : %d\n", size);
         for (int i = 0; i < FUNCS_N; i++) {
@@ -562,7 +562,7 @@ void timeExperiment() {
     }
 
     // запись статистики в файл
-    for (size_t size = 10000; size <= 100000; size += 10000) {
+    for (size_t size = 1000000; size <= 1000000; size += 10000) {
         printf(" - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -\n");
         printf("Size : %d\n", size);
         for (int i = 0; i < COMPS_N; i++) {
@@ -582,5 +582,13 @@ void timeExperiment() {
 
 int main() {
     timeExperiment();
+
+//    remove("Пр_ФИЗ");
+
+//    if (-1 == a)
+//        printf("NO");
+//    else
+//        printf("YES");
+
     return 0;
 }
