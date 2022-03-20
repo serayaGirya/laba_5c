@@ -511,10 +511,10 @@ void timeExperiment() {
 //            {bubbleSort,    "bubbleSort"},
             {combsort,      "combSort"},
 //            {ShellSort,     "shellSort"},
-            {radixSort,     "radixSort"},
+//            {radixSort,     "radixSort"},
             {mergeSort,     "mergeSort"},
-            {heapSort,      "heapSort"},
-            {quicksort,     "quicksort"},
+//            {heapSort,      "heapSort"},
+//            {quicksort,     "quicksort"},
             // вы добавите свои сортировки
     };
     const unsigned FUNCS_N = ARRAY_SIZE (sorts);
